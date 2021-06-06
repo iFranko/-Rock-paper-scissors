@@ -1,0 +1,95 @@
+<!--Name: Frank Kufer 
+    Date: November 15th, 2020
+    Description: html file that has form of name, age, color , and submit button that manipulate with divs and form element using JavaScrpit file 
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>RPS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/game.js"></script>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body id ="bc">
+    
+
+    <div style = "visibility: hidden;" id="nameAge">
+        <div class ="name" >
+            <span id="displayName" ></span >  
+        </div>
+        <div class ="name">
+            <span id="displayAge"></span >
+        </div>
+    </div>
+
+    <div id ="final" class ="score" style = "visibility: hidden;" >
+        
+        <div>
+        <span id="choice" ></span >
+        </div>
+        <div>
+        <span id="system" ></span >
+        </div>
+        <div>
+            <span id="feedback" ></span></span>
+        </div>
+        <div>
+        <input type="button" id="playAgain" value="Play Again" style = "visibility: hidden;">
+        </div>
+        <div>
+            <span id="finalScore" ></span >
+        </div>
+        <div>
+            <input type="button" id="startAgain" value="Start Again" style = "visibility: hidden;">
+        </div>
+    </div>
+
+    <div id="game_example" class="game" style="visibility: hidden;">
+
+        <input type="button" id="rock" value="Rock">
+        <input type="button" id="paper" value="Paper">
+        <input type="button" id="scissors" value="Scissors">
+    </div>
+   
+    
+  
+        <form id="example_form" class="form" >
+                <div class ="container">
+                    <label>Enter your Name</label>
+                    <input  type="text" id="userName" placeholder="Name" required autofocus>
+                </div>
+                <div class ="container">
+                    <label>Enter your Age</label>
+                    <input  type="number" id="age" placeholder="Age"  value="5" required>
+                </div>
+                <div class ="container">
+                    <label>Select your Favourite Colour</label>
+                    <input type="color" id="color" >
+                </div>
+            
+                <div  class ="container">
+                    
+                    <input type="submit" id="play" value="Play Now">
+                </div>
+        </form>
+
+
+
+    <input type="button" id="help" value="Help?"  style = "visibility: hidden;"  > 
+    <div id="info" style = "visibility: hidden;" >
+        <p>Rock Paper Scissors is 5 rounds game.<br> Where the user will be playing facing the computer.<br>
+         Rules are: Rock defeats the Scissors, Scissors defeats Paper, <br> and Paper defeats Rock. </p>
+        <input type="button" id="unhelp" value="Go Back">
+    </div>
+
+   
+
+
+</body>
+
+</html>
